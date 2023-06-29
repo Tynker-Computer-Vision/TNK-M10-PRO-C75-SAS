@@ -60,27 +60,22 @@ age_model.add(Conv2D(128, kernel_size=3, activation='relu', input_shape=(200,200
 age_model.add(MaxPool2D(pool_size=3, strides=2))
 
 
-# Add Conv2D layer of 128, kernal size of 3, activation function as relu 
 age_model.add(Conv2D(128, kernel_size=3, activation='relu'))
-# Add MaxPool2D with pool_size of 3 and strides of 2
 age_model.add(MaxPool2D(pool_size=3, strides=2))
               
-# Add Conv2D layer of 256, kernal size of 3, activation function as relu
 age_model.add(Conv2D(256, kernel_size=3, activation='relu'))
-# Add MaxPool2D with pool_size of 3 and strides of 2
 age_model.add(MaxPool2D(pool_size=3, strides=2))
 
-# Add Conv2D layer of 512, kernal size of 3, activation function as relu 
 age_model.add(Conv2D(512, kernel_size=3, activation='relu'))
-# Add MaxPool2D with pool_size of 3 and strides of 2
 age_model.add(MaxPool2D(pool_size=3, strides=2))
 
-# Add Flatten() to the model
 age_model.add(Flatten())
+
 # Add Dropout of 0.2
 age_model.add(Dropout(0.2))
-# Add Dense with 512, activation as relu
+
 age_model.add(Dense(512, activation='relu'))
+
 # Add Dense with 1, activation as linear and name as 'age'
 age_model.add(Dense(1, activation='linear', name='age'))
               
