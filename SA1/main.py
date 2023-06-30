@@ -45,7 +45,7 @@ ages = np.array(ages,dtype=np.int64)
 images = np.array(images)
 
 # Split the images in Training and testing sets i.e. training_images, testing_images, training_ages, testing_ages 
-training_images, testing_images, training_ages, testing_ages = train_test_split(images, ages, random_state=42)
+training_images, testing_images, training_ages, testing_ages = train_test_split(images, ages)
 
 print(":::::::::::::::::::::::::::::::::::::::::::::::::")
 # Print the length of training and testing images datasets
